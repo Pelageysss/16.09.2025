@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int y,x,d,x1;
+    d = 1;
+    x1=0;
+    cout <<"Service limit for suspicion : ";
+    cin >> y ;
+    cout <<"How much money was spent on the first day? : ";
+    cin >> x ;
+    while (x < y) {
+        x1=(x*110)/100;
+        x=x1;
+        ++d;
+    }
+    cout << "Need " << d << " days for catch him";
+}
